@@ -3,6 +3,7 @@
   "displayName": "File Tree Exporter",
   "description": "選択したファイルを階層構造を保ってコピーする拡張機能",
   "version": "0.0.1",
+  "publisher": "omni-kobo",
   "repository": {
     "type": "git",
     "url": "https://github.com/takeshi-kishima/file-tree-exporter.git"
