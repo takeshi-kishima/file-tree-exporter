@@ -4,6 +4,19 @@ import * as fs from "fs";
 import { getMessages } from "./i18n";
 
 export function activate(context: vscode.ExtensionContext) {
+  const config = vscode.workspace.getConfiguration('fileTreeExporter');
+  const currentLanguage = config.get('language');
+
+  // 現在の設定が空文字列（自動）の場合のみ、VS Code言語に基づいて設定
+  if (currentLanguage === "") {
+    const vscodeLanguage = vscode.env.language;
+    if (vscodeLanguage === 'ja') {
+      config.update('language', 'ja', vscode.ConfigurationTarget.Global);
+    } else {
+      config.update('language', 'en', vscode.ConfigurationTarget.Global);
+    }
+  }
+
   // 階層構造を保ってコピーするコマンド
   const exportFileTreeCommand = vscode.commands.registerCommand(
     "file-tree-exporter.exportFileTree",
