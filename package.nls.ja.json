@@ -1,0 +1,8 @@
+{
+  "command.exportFileTree.title": "階層構造を保ってコピー",
+  "config.title": "ファイルツリーエクスポーター",
+  "config.language.auto": "VSCodeのUI言語を使用",
+  "config.language.en": "英語",
+  "config.language.ja": "日本語",
+  "config.language.description": "メッセージに使用する言語"
+}

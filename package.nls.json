@@ -1,0 +1,8 @@
+{
+  "command.exportFileTree.title": "Copy with Directory Structure",
+  "config.title": "File Tree Exporter",
+  "config.language.auto": "Use VS Code's UI language",
+  "config.language.en": "English",
+  "config.language.ja": "Japanese",
+  "config.language.description": "The language to use for messages"
+}
