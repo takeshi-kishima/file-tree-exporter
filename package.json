@@ -32,7 +32,7 @@
       "explorer/context": [
         {
           "command": "file-tree-exporter.exportFileTree",
-          "group": "navigation"
+          "group": "navigation@99"
         }
       ],
       "commandPalette": [
